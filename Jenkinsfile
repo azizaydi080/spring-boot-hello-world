@@ -14,7 +14,7 @@ pipeline {
     stage('Build') {
       steps {
         // Auto-checkout not yet enabled
-        git 'http://139.84.159.194:5555/dasher-org/jenkins-hello-world.git'
+     //   git 'http://139.84.159.194:5555/dasher-org/jenkins-hello-world.git'
         sh 'mvn clean package -DskipTests=true'
       }
     }
