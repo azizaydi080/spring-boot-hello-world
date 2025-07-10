@@ -11,7 +11,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'mvn clean package -DskipTests=true'
-        archiveArtifacts 'spring-boot-2-hello-world-*.jar'
+        archiveArtifacts 'target/spring-boot-2-hello-world-*.jar'
       }
     }
 
